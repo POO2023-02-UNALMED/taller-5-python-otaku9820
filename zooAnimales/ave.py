@@ -12,28 +12,28 @@ class Ave(Animal):
         Ave.listado.append(self)
 
     @staticmethod
-    def cantidad_aves():
+    def cantidadAves():
         return len(Ave.listado)
 
     def movimiento(self):
         return "Volar"
 
     @staticmethod
-    def crear_halcon(nombre, edad, genero):
+    def crearHalcon(nombre, edad, genero):
         nueva_ave = Ave(nombre, edad, "montañas", genero, "café glorioso")
         Ave.halcones += 1
         return nueva_ave
 
     @staticmethod
-    def crear_aguila(nombre, edad, genero):
+    def crearAguila(nombre, edad, genero):
         nueva_ave = Ave(nombre, edad, "montañas", genero, "blanco y amarillo")
         Ave.aguilas += 1
         return nueva_ave
 
-    def get_color_plumas(self):
+    def getcolorPlumas(self):
         return self.color_plumas
 
-    def set_color_plumas(self, color_plumas):
+    def setColorPlumas(self, color_plumas):
         self.color_plumas = color_plumas
 
 

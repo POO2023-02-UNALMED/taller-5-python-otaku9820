@@ -8,14 +8,14 @@ class Zoologico:
         self.ubicacion = ubicacion
         
 
-    def cantidad_total_animales(self):
+    def cantidadTotalAnimales(self):
         print(Animal.total_animales())
 
-    def agregar_zona(self, zona):
+    def agregarZona(self, zona):
         self.zonas.append(zona)
 
-    def get_nombre(self):
+    def getNombre(self):
         return self.nombre
 
-    def set_nombre(self, nombre):
+    def setNombre(self, nombre):
         self.nombre = nombre

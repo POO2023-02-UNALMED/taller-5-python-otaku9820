@@ -2,7 +2,7 @@
 from zooAnimales.animal import Animal
 
 class Anfibio(Animal):
-    listado = []
+    _listado = []
 
     def __init__(self, nombre, edad, habitat, genero, color_piel, venenoso):
         super().__init__(nombre, edad, habitat, genero)
@@ -11,7 +11,7 @@ class Anfibio(Animal):
         Anfibio.listado.append(self)
 
     @staticmethod
-    def cantidad_anfibios():
+    def cantidadAnfibios():
         return len(Anfibio.listado)
 
     def movimiento(self):
@@ -23,18 +23,18 @@ class Anfibio(Animal):
         return nuevo_anfibio
 
     @staticmethod
-    def crear_salamandra(nombre, edad, genero):
+    def crearSalamandra(nombre, edad, genero):
         nuevo_anfibio = Anfibio(nombre, edad, "selva", genero, "negro y amarillo", False)
         return nuevo_anfibio
 
-    def get_color_piel(self):
+    def getColorPiel(self):
         return self.color_piel
 
-    def set_color_piel(self, color_piel):
+    def setColorPiel(self, color_piel):
         self.color_piel = color_piel
 
-    def is_venenoso(self):
+    def isVenenoso(self):
         return self.venenoso
 
-    def set_venenoso(self, venenoso):
+    def setVenenoso(self, venenoso):
         self.venenoso = venenoso

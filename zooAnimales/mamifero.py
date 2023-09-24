@@ -13,29 +13,29 @@ class Mamifero(Animal):
         Mamifero.listado.append(self)
 
     @staticmethod
-    def cantidad_mamiferos():
+    def cantidadMamiferos():
         return len(Mamifero.listado)
 
     @staticmethod
-    def crear_caballo(nombre, edad, genero):
+    def crearCaballo(nombre, edad, genero):
         nuevo_mamifero = Mamifero(nombre, edad, "pradera", genero, True, 4)
         Mamifero.caballos += 1
         return nuevo_mamifero
 
     @staticmethod
-    def crear_leon(nombre, edad, genero):
+    def crearLeon(nombre, edad, genero):
         nuevo_mamifero = Mamifero(nombre, edad, "selva", genero, True, 4)
         Mamifero.leones += 1
         return nuevo_mamifero
 
-    def get_patas(self):
+    def getPatas(self):
         return self.patas
 
-    def set_patas(self, patas):
+    def setPatas(self, patas):
         self.patas = patas
 
-    def is_pelaje(self):
+    def isPelaje(self):
         return self.pelaje
 
-    def set_pelaje(self, pelaje):
+    def setPelaje(self, pelaje):
         self.pelaje = pelaje

@@ -14,32 +14,32 @@ class Pez(Animal):
         Pez.listado.append(self)
 
     @staticmethod
-    def cantidad_peces():
+    def cantidadPeces():
         return len(Pez.listado)
 
     def movimiento(self):
         return "nadar"
 
     @staticmethod
-    def crear_salmon(nombre, edad, genero):
+    def crearSalmon(nombre, edad, genero):
         nuevo_pez = Pez(nombre, edad, "oceano", genero, "rojo", 6)
         Pez.salmones += 1
         return nuevo_pez
 
     @staticmethod
-    def crear_bacalao(nombre, edad, genero):
+    def crearBacalao(nombre, edad, genero):
         nuevo_pez = Pez(nombre, edad, "oceano", genero, "gris", 6)
         Pez.bacalaos += 1
         return nuevo_pez
 
-    def get_cantidad_aletas(self):
+    def getCantidad_aletas(self):
         return self.cantidad_aletas
 
-    def set_cantidad_aletas(self, cantidad_aletas):
+    def setCantidad_aletas(self, cantidad_aletas):
         self.cantidad_aletas = cantidad_aletas
 
-    def get_color_escamas(self):
+    def getColorEscamas(self):
         return self.color_escamas
 
-    def set_color_escamas(self, color_escamas):
+    def setColorEscamas(self, color_escamas):
         self.color_escamas = color_escamas

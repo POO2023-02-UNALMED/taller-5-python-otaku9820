@@ -39,29 +39,29 @@ class Animal:
         )
 
     @classmethod
-    def get_total_animales(cls):
+    def getTotalAnimales(cls):
         return cls.total_animales
 
-    def get_nombre(self):
+    def getNombre(self):
         return self.nombre
 
-    def get_edad(self):
+    def getEdad(self):
         return self.edad
 
-    def get_habitat(self):
+    def getHabitat(self):
         return self.habitat
 
-    def get_genero(self):
+    def getGenero(self):
         return self.genero
 
-    def set_nombre(self, nombre):
+    def setNombre(self, nombre):
         self.nombre = nombre
 
-    def set_edad(self, edad):
+    def setEdad(self, edad):
         self.edad = edad
 
-    def set_habitat(self, habitat):
+    def setHabitat(self, habitat):
         self.habitat = habitat
 
-    def set_genero(self, genero):
+    def setGenero(self, genero):
         self.genero = genero
