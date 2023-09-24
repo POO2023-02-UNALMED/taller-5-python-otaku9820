@@ -1,5 +1,5 @@
 from gestion import Zona
-from zooAnimales import Pez
+from zooAnimales.pez import Pez
 from zooAnimales.anfibio import Anfibio
 from zooAnimales.ave import Ave
 from zooAnimales.mamifero import Mamifero
