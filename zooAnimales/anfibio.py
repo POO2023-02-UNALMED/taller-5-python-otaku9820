@@ -1,5 +1,5 @@
-from gestion import Zona
-from zooAnimales import Animal
+from gestion.zona import Zona
+from zooAnimales.animal import Animal
 
 class Anfibio(Animal):
     listado = []
