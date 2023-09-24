@@ -1,5 +1,5 @@
 
-from gestion.zona import Zona
+
 from zooAnimales.animal import Animal
 
 class Pez(Animal):

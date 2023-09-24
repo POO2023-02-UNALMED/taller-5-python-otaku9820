@@ -1,4 +1,4 @@
-from gestion.zona import Zona
+
 from zooAnimales.pez import Pez
 from zooAnimales.anfibio import Anfibio
 from zooAnimales.ave import Ave
