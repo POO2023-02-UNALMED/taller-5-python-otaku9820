@@ -1,5 +1,5 @@
 
-
+from zooAnimales.animal import Animal 
 
 class Zoologico:
     def __init__(self, nombre, ubicacion):
@@ -8,7 +8,7 @@ class Zoologico:
         self.zonas = []
 
     def cantidad_total_animales(self):
-        print(ani.total_animales())
+        print(Animal.total_animales())
 
     def agregar_zona(self, zona):
         self.zonas.append(zona)

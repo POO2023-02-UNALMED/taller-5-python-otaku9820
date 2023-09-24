@@ -1,5 +1,5 @@
 
-from zooAnimales.animal import Animal
+from zooAnimales import Animal
 
 class Mamifero(Animal):
     listado = []
