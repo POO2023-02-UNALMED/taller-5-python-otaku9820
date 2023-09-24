@@ -1,7 +1,7 @@
 
-from zooAnimales.animal import Animal
+from zooAnimales.animal import Animal as an
 
-class Ave(Animal):
+class Ave(an):
     listado = []
     halcones = 0
     aguilas = 0
