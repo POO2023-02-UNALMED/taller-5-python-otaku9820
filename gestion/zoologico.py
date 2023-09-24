@@ -1,5 +1,5 @@
 
-from zooAnimales.animal import Animal as ani
+
 
 class Zoologico:
     def __init__(self, nombre, ubicacion):
