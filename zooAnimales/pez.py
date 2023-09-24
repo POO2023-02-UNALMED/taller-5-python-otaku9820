@@ -1,6 +1,6 @@
 
 
-from zooAnimales import Animal
+from zooAnimales.animal import Animal
 
 class Pez(Animal):
     listado = []

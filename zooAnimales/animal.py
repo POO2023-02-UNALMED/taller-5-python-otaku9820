@@ -1,21 +1,19 @@
 
-from zooAnimales.pez import Pez
-from zooAnimales.anfibio import Anfibio
-from zooAnimales.ave import Ave
-from zooAnimales.mamifero import Mamifero
-from zooAnimales.reptil import Reptil
+import zooAnimales
 
 
 class Animal:
-    total_animales = 0
+    _total_animales = 0
+    _zona=""
 
     def __init__(self, nombre, edad, habitat, genero):
         self.nombre = nombre
         self.edad = edad
         self.habitat = habitat
         self.genero = genero
-        self.zona = None  # Asumiendo que cada animal puede estar en una zona específica
+        
         Animal.total_animales += 1
+        
 
     def movimiento(self):
         return "Desplazarse"
@@ -23,11 +21,11 @@ class Animal:
     @staticmethod
     def total_por_tipo():
         resultado = (
-            f"Mamíferos: {Mamifero.cantidad_mamiferos()}, "
-            f"Aves: {Ave.cantidad_aves()}, "
-            f"Reptiles: {Reptil.cantidad_reptiles()}, "
-            f"Peces: {Pez.cantidad_peces()}, "
-            f"Anfibios: {Anfibio.cantidad_anfibios()}"
+            f"Mamíferos: {zooAnimales.mamifero.Mamiferos.cantidad_mamiferos()}, "
+            f"Aves: {zooAnimales.ave.Ave.cantidad_aves()}, "
+            f"Reptiles: {zooAnimales.reptil.Reptil.cantidad_reptiles()}, "
+            f"Peces: {zooAnimales.pez.Pez.cantidad_peces()}, "
+            f"Anfibios: {zooAnimales.anfibio.Anfibio.cantidad_anfibios()}"
         )
         return resultado
 
