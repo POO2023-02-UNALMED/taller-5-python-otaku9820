@@ -6,20 +6,20 @@ class Zona:
         self.zoo = zoo
         self.animales = []
 
-    def agregar_animal(self, animal):
+    def agregarAnimal(self, animal):
         self.animales.append(animal)
 
-    def cantidad_animales(self):
+    def cantidadAnimales(self):
         print(len(self.animales))
 
-    def get_nombre(self):
+    def getNombre(self):
         return self.nombre
 
-    def set_nombre(self, nombre):
+    def setNombre(self, nombre):
         self.nombre = nombre
 
-    def get_zoo(self):
+    def getZoo(self):
         return self.zoo
 
-    def set_zoo(self, zoo):
+    def setZoo(self, zoo):
         self.zoo = zoo
