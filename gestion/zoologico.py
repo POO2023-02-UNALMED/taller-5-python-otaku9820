@@ -1,5 +1,5 @@
 
-from zooAnimales.animal import Animal 
+from gestion.zona import Zona
 
 
 
@@ -14,7 +14,8 @@ class Zoologico:
         x=0
         for i in self._zonas:
             x+=i.cantidadAnimales()
-            return x
+            
+        return x
 
     def agregarZonas(self, zona):
         self._zonas.append(zona)
