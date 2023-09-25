@@ -20,13 +20,13 @@ class Pez(Animal):
     def movimiento(self):
         return "nadar"
 
-    @staticmethod
+    @classmethod
     def crearSalmon(cls, nombre, edad, genero):
         nuevo_pez = cls(nombre, edad, "oceano", genero, "rojo", 6)
         Pez.salmones += 1
         return nuevo_pez
 
-    @staticmethod
+    @classmethod
     def crearBacalao(cls,nombre, edad, genero):
         nuevo_pez = cls(nombre, edad, "oceano", genero, "gris", 6)
         Pez.bacalaos += 1

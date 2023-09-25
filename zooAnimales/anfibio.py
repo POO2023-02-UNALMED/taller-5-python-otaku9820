@@ -19,12 +19,12 @@ class Anfibio(Animal):
     def movimiento(self):
         return "saltar"
 
-    @staticmethod
+    @classmethod
     def crear_rana(cls, nombre, edad, genero):
         cls(nombre, edad,"selva", genero,"rojo", True)
         cls.ranas+=1
 
-    @staticmethod
+    @classmethod
     def crearSalamandra(cls, nombre, edad, genero):
          cls(nombre, edad, "selva", genero, "negro y amarillo", False)
          cls.salamandras +=1

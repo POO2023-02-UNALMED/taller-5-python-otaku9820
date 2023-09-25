@@ -12,20 +12,20 @@ class Reptil(Animal):
         self._largoCola = largo_cola
         Reptil._listado.append(self)
 
-    @staticmethod
+    @classmethod
     def cantidadReptiles():
         return len(Reptil._listado)
 
     def movimiento(self):
         return "reptar"
 
-    @staticmethod
+    @classmethod
     def crearIguana(cls,nombre, edad, genero):
         nuevo_reptil = cls(nombre, edad, "humedal", genero, "verde", 3)
         Reptil.iguanas += 1
         return nuevo_reptil
 
-    @staticmethod
+    @classmethod
     def crearSerpiente(cls,nombre, edad, genero):
         nuevo_reptil = cls(nombre, edad, "jungla", genero, "blanco", 1)
         Reptil.serpientes += 1
