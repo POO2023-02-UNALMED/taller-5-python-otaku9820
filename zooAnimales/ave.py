@@ -37,7 +37,7 @@ class Ave(Animal):
         self._colorPlumas = color_plumas
         
     def toString(self):
-        return "mi nombre es ",self._nombre, ", tengo una edad de", self._edad, ", habito en", self._habitat, " y mi genero es", self._genero
+        return f"Mi nombre es {self._nombre}, tengo una edad de {self._edad}, habito en {self._habitat} y mi genero es {self._genero}"
 
 
 
