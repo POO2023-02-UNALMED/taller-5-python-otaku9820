@@ -19,7 +19,7 @@ class Animal:
         return "Desplazarse"
 
     @staticmethod
-    def total_por_tipo():
+    def totalPorTipo():
         resultado = (
             f"Mamíferos: {zooAnimales.mamifero.Mamiferos.cantidad_mamiferos()}, "
             f"Aves: {zooAnimales.ave.Ave.cantidad_aves()}, "
