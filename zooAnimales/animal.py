@@ -20,14 +20,8 @@ class Animal:
 
     @staticmethod
     def totalPorTipo():
-        resultado = (
-            f"Mamíferos: {zooAnimales.mamifero.Mamifero.cantidadMamiferos()}, "
-            f"Aves: {zooAnimales.ave.Ave.cantidadAves()}, "
-            f"Reptiles: {zooAnimales.reptil.Reptil.cantidadReptiles()}, "
-            f"Peces: {zooAnimales.pez.Pez.cantidadPeces()}, "
-            f"Anfibios: {zooAnimales.anfibio.Anfibio.cantidadAnfibios()}"
-        )
-        return resultado
+        return "Mamiferos : " + str(zooAnimales.mamifero.Mamifero.cantidadMamiferos()) + "\nAves : " + str(zooAnimales.ave.Ave.cantidadAves()) + "\nReptiles : " + str(zooAnimales.reptil.Reptil.cantidadReptiles()) + "\nPeces : " + str(zooAnimales.pez.Pez.cantidadPeces()) + "\nAnfibios : " + str(zooAnimales.anfibio.Anfibio.cantidadAnfibios())
+        
 
     def __str__(self):
         return (
