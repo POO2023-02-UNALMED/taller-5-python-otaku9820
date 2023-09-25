@@ -12,7 +12,7 @@ class Reptil(Animal):
         self._largoCola = largo_cola
         Reptil._listado.append(self)
 
-    @classmethod
+    @staticmethod
     def cantidadReptiles():
         return len(Reptil._listado)
 
