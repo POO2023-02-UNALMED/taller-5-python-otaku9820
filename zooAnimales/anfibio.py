@@ -20,7 +20,7 @@ class Anfibio(Animal):
         return "saltar"
 
     @classmethod
-    def crear_rana(cls, nombre, edad, genero):
+    def crearRana(cls, nombre, edad, genero):
         cls(nombre, edad,"selva", genero,"rojo", True)
         cls.ranas+=1
 
