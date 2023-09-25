@@ -28,7 +28,7 @@ class Zoologico:
         
     @classmethod
     def getZona(cls):
-        return cls._zona
+        return cls._zonas
     @classmethod
     def setZona(cls, zona):
         cls._zonas = zona
