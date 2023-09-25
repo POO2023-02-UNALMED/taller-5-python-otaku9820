@@ -8,7 +8,7 @@ class Ave(Animal):
 
     def __init__(self, nombre, edad, habitat, genero, color_plumas):
         super().__init__(nombre, edad, habitat, genero)
-        self._color_plumas = color_plumas
+        self._colorPlumas = color_plumas
         Ave._listado.append(self)
 
     @staticmethod
@@ -31,10 +31,10 @@ class Ave(Animal):
         return nueva_ave
 
     def getcolorPlumas(self):
-        return self._color_plumas
+        return self._colorPlumas
 
     def setColorPlumas(self, color_plumas):
-        self._color_plumas = color_plumas
+        self._colorPlumas = color_plumas
 
 
 

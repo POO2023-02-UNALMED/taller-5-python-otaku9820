@@ -32,10 +32,10 @@ class Pez(Animal):
         Pez.bacalaos += 1
         return nuevo_pez
 
-    def getCantidad_aletas(self):
+    def getCantidadAletas(self):
         return self._cantidadAletas
 
-    def setCantidad_aletas(self, cantidad_aletas):
+    def setCantidadAletas(self, cantidad_aletas):
         self._cantidadAletas = cantidad_aletas
 
     def getColorEscamas(self):
