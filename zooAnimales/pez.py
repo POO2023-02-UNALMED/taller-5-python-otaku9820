@@ -3,43 +3,43 @@
 from zooAnimales.animal import Animal
 
 class Pez(Animal):
-    listado = []
+    _listado = []
     salmones = 0
     bacalaos = 0
 
     def __init__(self, nombre, edad, habitat, genero, color_escamas, cantidad_aletas):
         super().__init__(nombre, edad, habitat, genero)
-        self.color_escamas = color_escamas
-        self.cantidad_aletas = cantidad_aletas
-        Pez.listado.append(self)
+        self._colorEscamas = color_escamas
+        self._cantidadAletas = cantidad_aletas
+        Pez._listado.append(self)
 
     @staticmethod
     def cantidadPeces():
-        return len(Pez.listado)
+        return len(Pez._listado)
 
     def movimiento(self):
         return "nadar"
 
     @staticmethod
-    def crearSalmon(nombre, edad, genero):
-        nuevo_pez = Pez(nombre, edad, "oceano", genero, "rojo", 6)
+    def crearSalmon(cls, nombre, edad, genero):
+        nuevo_pez = cls(nombre, edad, "oceano", genero, "rojo", 6)
         Pez.salmones += 1
         return nuevo_pez
 
     @staticmethod
-    def crearBacalao(nombre, edad, genero):
-        nuevo_pez = Pez(nombre, edad, "oceano", genero, "gris", 6)
+    def crearBacalao(cls,nombre, edad, genero):
+        nuevo_pez = cls(nombre, edad, "oceano", genero, "gris", 6)
         Pez.bacalaos += 1
         return nuevo_pez
 
     def getCantidad_aletas(self):
-        return self.cantidad_aletas
+        return self._cantidadAletas
 
     def setCantidad_aletas(self, cantidad_aletas):
-        self.cantidad_aletas = cantidad_aletas
+        self._cantidadAletas = cantidad_aletas
 
     def getColorEscamas(self):
-        return self.color_escamas
+        return self._colorEscamas
 
     def setColorEscamas(self, color_escamas):
-        self.color_escamas = color_escamas
+        self._colorEscamas = color_escamas
