@@ -30,7 +30,7 @@ class Ave(Animal):
         Ave.aguilas += 1
         return nueva_ave
 
-    def getcolorPlumas(self):
+    def getColorPlumas(self):
         return self._colorPlumas
 
     def setColorPlumas(self, color_plumas):
