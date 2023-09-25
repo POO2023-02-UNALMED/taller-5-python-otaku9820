@@ -35,6 +35,9 @@ class Ave(Animal):
 
     def setColorPlumas(self, color_plumas):
         self._colorPlumas = color_plumas
+        
+    def toString(self):
+        return "mi nimbre es ",self.nombre, ", tengo una edad de", self.edad, ", habito en", self.habitat, " y mi genero es", self.genero
 
 
 
